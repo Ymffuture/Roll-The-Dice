@@ -110,3 +110,15 @@ span{
     font-weight: 700;
     
 }
+
+footer{
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    font-weight: 200;
+}
+#ft{
+    font-weight: 100;
+   
+    font: 1em sans-serif;
+}
