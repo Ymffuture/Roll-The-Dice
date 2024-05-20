@@ -92,7 +92,7 @@ button{
     text-overflow: ellipsis;
     width: 51%;
     font-family: 'Nunito', sans-serif;
-    font-size: 30px;
+    font-size: 18px;
 }
 h1{
     text-align: center;
@@ -113,7 +113,7 @@ span{
 
 footer{
     position: absolute;
-    bottom: -10px;
+    bottom: -50px;
     right: 0;
     font-weight: 200;
 }
