@@ -93,4 +93,13 @@ img{
     text-overflow: ellipsis;
     width: 50%;
 }
-
+h1{
+    text-align: center;
+    color: #2D1456;
+    font-size: 40px;
+    font-family: 'Nunito', sans-serif;
+}
+span{
+    color: #ff6e6a;
+    font-style: oblique;
+}
