@@ -92,6 +92,7 @@ img{
     bottom: 0;
     text-overflow: ellipsis;
     width: 50%;
+    font-family: 'Nunito', sans-serif;
 }
 h1{
     text-align: center;
