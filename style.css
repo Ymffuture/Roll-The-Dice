@@ -2,14 +2,17 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 body{
     height: 100vh;
     background: linear-gradient(
         #2D1456,
         #ff6e6a
-    ) 0 100% no-repeat;
+        
+    )  0 100% no-repeat;
     background-size: 100% 50%;
+   
 }
 .container{
     width: 400px;
@@ -82,17 +85,14 @@ button{
         transform: rotateY(360deg);
     }
 }
-img{
-    color: #2D1456;
-    filter: hue-rotate(44);
-    filter: brightness(2);
-}
+
 .rules{
     position: absolute;
     bottom: 0;
     text-overflow: ellipsis;
-    width: 50%;
+    width: 51%;
     font-family: 'Nunito', sans-serif;
+    font-size: 30px;
 }
 h1{
     text-align: center;
@@ -103,4 +103,10 @@ h1{
 span{
     color: #ff6e6a;
     font-style: oblique;
+}
+.bi{
+    color: #2D1456;
+    font-size: 40px;
+    font-weight: 700;
+    
 }
