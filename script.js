@@ -32,9 +32,13 @@ function roll() {
     if (total === 7) {
       message += " 🎖🎉🎉wins!";
      
-    } else if (total === 9) {
+    } else if (total === 9 || total === 3) {
       message += " 😥loses!";
-    } else {
+    }else if( total === 12){
+      message += '\n' + '+1 point💥 added to your current SCORE!'
+    }
+    
+    else {
       message += "'s  turn";
       currentPlayer = currentPlayer === 1 ? 2 : 1;
     }
@@ -43,3 +47,4 @@ function roll() {
   }, 1996);
 }
 roll();
+
