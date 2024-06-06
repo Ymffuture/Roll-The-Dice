@@ -8,14 +8,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <!--Stylesheet-->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -49,15 +45,48 @@
 
       <button onclick="roll()">ROLL'D'DICE</button>
     </div>
-    <div class="rules">
-      <p>RULES</p>
-      <ul>
-        <li>- 7  <pre>+2 points</pre></li>
-        <li>- 12 <pre>+3 points</pre></li>
-        <li>- 9  <pre>-1 point</pre></li>
-        <li>- <b>Three</b> 7s in the row WON the game.</li>
-      </ul>
+    <div class="rules mt-5">
+      <h2 class="mb-3">Rules</h2>
+      <table class="table table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th>Dice Roll</th>
+            <th>Outcome</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>7</td>
+            <td>Adds 2 points to your score.</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Subtracts 1 point from your score.</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Adds 3 points to your score.</td>
+          </tr>
+          <tr>
+            <td>Three 7s in a row</td>
+            <td>Wins the game.</td>
+          </tr>
+          <tr>
+            <td>Double 6</td>
+            <td>Adds 4 points to your score.</td>
+          </tr>
+          <tr>
+            <td>Double 1</td>
+            <td>Subtracts 2 points from your score.</td>
+          </tr>
+          <tr>
+            <td>Total score reaches 20 points</td>
+            <td>Wins the game.</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
+    
     <footer>
         <div class="footer-bottom">
           <p id="ft">&copy; 2024 Dicerolly. All rights reserved.</p>
@@ -65,5 +94,8 @@
       </footer>
     <!--Script-->
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
   </body>
 </html>
