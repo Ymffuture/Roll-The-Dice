@@ -94,12 +94,20 @@ button{
 }
 
 .rules{
-    position: absolute;
-    bottom: 0;
-    text-overflow: ellipsis;
-    width: 51%;
+
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
+    position: absolute;
+    bottom: -100px;
+}
+#pt1{
+    color: red;
+}
+#pt2{
+    color: green;
+}
+#pt3{
+    color: #2D1456;
 }
 h1{
     text-align: center;
@@ -120,9 +128,10 @@ span{
 
 footer{
     position: absolute;
-    bottom: -50px;
+    bottom: -10px;
     right: 0;
     font-weight: 200;
+    opacity: .6;
 }
 #ft{
     font-weight: 100;
@@ -142,3 +151,38 @@ input{
     padding: 8px;
     margin: 8px;
 }
+.table {
+    background-color: #ffffff;
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  }
+
+  .table thead th {
+    background-color: #2D1456;
+    color: #ffffff;
+    border: none;
+    padding: 1rem;
+  }
+
+  .table tbody tr {
+    border-bottom: 2px solid #e100ff;
+  }
+
+  .table tbody td {
+    padding: 1rem;
+  }
+
+  .table tbody tr:nth-of-type(odd) {
+    background-color: #cbc9c9;
+  }
+
+  .table tbody tr:hover {
+    background-color: #ff0404;
+    color:#cbc9c9;
+    font-weight: 700;
+  }
+
+  .table tbody tr:last-of-type {
+    border-bottom: none;
+  }
