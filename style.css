@@ -13,12 +13,12 @@ body{
     )  0 100% no-repeat;
     background-size: 100% 50%;
 
-    zoom: 110%;
+    /* zoom: 110%; */
    
 }
 .container{
-    width: 400px;
-    padding: 50px;
+    width: 600px;
+    padding: 90px;
     position: absolute;
     transform: translate(-50%,-50%);
     top: 50%;
@@ -98,7 +98,7 @@ button{
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
     position: absolute;
-    bottom: -100px;
+    bottom: 0;
 }
 #pt1{
     color: red;
