@@ -1,48 +1,45 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
-body{
+
+body {
     height: 100vh;
-    background: linear-gradient(
-        #2D1456,
-        #ff6e6a
-        
-    )  0 100% no-repeat;
+    background: linear-gradient(#f28e8e, #000000) 0 100% no-repeat;
     background-size: 100% 50%;
-
-    /* zoom: 110%; */
-   
 }
-.container{
+
+.container {
     width: 600px;
     padding: 90px;
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     background-color: #ffffff;
-    box-shadow: 0 15px 25px rgba(50,50,50,0.15);
+    box-shadow: 0 15px 25px rgba(50, 50, 50, 0.15);
     border-radius: 8px 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
 }
-.dice-wrapper{
+
+.dice-wrapper {
     width: 90%;
     display: flex;
     justify-content: space-around;
 }
-p{
+
+p {
     font-size: 16px;
     margin: 30px 0;
     font-weight: 700;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-button{
+
+button {
     background-color: #2D1456;
     border: none;
     outline: none;
@@ -50,25 +47,28 @@ button{
     padding: 15px 0;
     width: 150px;
     letter-spacing: 1px;
-    /* border-radius: 5px; */
     cursor: pointer;
     border-radius: 8px 500px;
 }
-.shake:nth-child(1){
+
+.shake:nth-child(1) {
     animation: shake 1.6s infinite;
     -webkit-animation: shake 1.6s infinite;
 }
-.shake:nth-child(2){
+
+.shake:nth-child(2) {
     animation: shake 1.9s infinite;
     -webkit-animation: shake 1.9s infinite;
 }
-@keyframes shake{
-    0%{
+
+@keyframes shake {
+    0% {
         transform: rotateY(360deg);
         color: black;
         rotate: -90deg;
     }
-    25%{
+
+    25% {
         transform: rotateX(-360deg);
         background: black;
         border-radius: 8px;
@@ -76,113 +76,149 @@ button{
         box-shadow: 20px 12px 4px rgba(0, 0, 0, 0.684);
         rotate: 180deg;
     }
-    50%{
+
+    50% {
         transform: rotateY(360deg);
         rotate: -360deg;
     }
-    75%{
+
+    75% {
         transform: rotateY(-360deg);
         background: rgb(65, 0, 75);
         border-radius: 8px;
         z-index: -1;
         box-shadow: 20px 12px 4px rgba(0, 0, 0, 0.684);
     }
-    100%{
+
+    100% {
         transform: rotateY(360deg);
         rotate: -90deg;
     }
 }
 
-.rules{
-
+.rules {
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
     position: absolute;
     bottom: 0;
 }
-#pt1{
+
+#pt1 {
     color: red;
 }
-#pt2{
+
+#pt2 {
     color: green;
 }
-#pt3{
+
+#pt3 {
     color: #2D1456;
 }
-h1{
+
+h1 {
     text-align: center;
     color: #2D1456;
     font-size: 40px;
     font-family: 'Nunito', sans-serif;
 }
-span{
+
+span {
     color: #ff6e6a;
     font-style: oblique;
 }
-.bi{
+
+.bi {
     color: #2D1456;
     font-size: 40px;
     font-weight: 700;
-    
 }
 
-footer{
+footer {
     position: absolute;
     bottom: -10px;
     right: 0;
     font-weight: 200;
-    opacity: .6;
+    opacity: .8;
+    color: #cbc9c9;
 }
-#ft{
+
+#ft {
     font-weight: 100;
-   
     font: 1em sans-serif;
 }
-#total{
+
+#total {
     background: #ff6e6a;
     padding: 40px;
     border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
 }
-input{
+
+input {
     padding: 8px;
     margin: 8px;
 }
+
 .table {
     background-color: #ffffff;
     border-collapse: separate;
     border-spacing: 0;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
-  }
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
 
-  .table thead th {
+.table thead th {
     background-color: #2D1456;
     color: #ffffff;
     border: none;
     padding: 1rem;
-  }
+}
 
-  .table tbody tr {
+.table tbody tr {
     border-bottom: 2px solid #e100ff;
-  }
+}
 
-  .table tbody td {
+.table tbody td {
     padding: 1rem;
-  }
+}
 
-  .table tbody tr:nth-of-type(odd) {
+.table tbody tr:nth-of-type(odd) {
     background-color: #cbc9c9;
-  }
+}
 
-  .table tbody tr:hover {
+.table tbody tr:hover {
     background-color: #ff0404;
-    color:#cbc9c9;
+    color: #cbc9c9;
     font-weight: 700;
-  }
+}
 
-  .table tbody tr:last-of-type {
+.table tbody tr:last-of-type {
     border-bottom: none;
-  }
+}
+
+/* Media Query for Small Devices */
+@media (max-width: 920px) {
+    .container {
+        width: 60%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .table thead th,
+    .table tbody td {
+        padding: 0.5rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .rules {
+        font-size: 16px;
+    }
+    body{
+        zoom: 70%;
+    }
+}
